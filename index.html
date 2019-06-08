@@ -36,17 +36,14 @@
 			<div class="full-div flex flex-center">
 				<div class="valign">
 					<div class="row" id="magic-container">
-						<h1 class="center" id="title">
-							<span id="title-0">Where</span>
-							<span id="title-1">The</span>
-							<span id="title-2">Fuck</span>
-							<span id="title-3">Is</span>
-							<span id="title-4">Our</span>
-							<span id="title-5">Kit</span><span id="title-6">?</span>
-						</h1>
-
-						<div class="center" id="where-is-it">.</div>
 						<div class="center" id="the-excuse">.</div>
+						
+						<h1 class="center" id="title">
+							<span id="title-0">Can't</span>
+							<span id="title-1">Be</span>
+							<span id="title-2">Done</span>
+							<span id="title-3">!</span>
+						</h1>
 					</div>	
 				</div>
 			</div>
@@ -54,8 +51,8 @@
 
 		<footer>
 			<div class="footer flex flex-center valign">
-				<span>Stressed about all the kit we've lost? Have you tried</span>&nbsp;
-				<a href="http://www.decisionproblem.com/paperclips/">paperclips?</a>
+				<span>Actually doing a job?</span>&nbsp;
+				<a href="https://wherethefuckisourkit.com/">Wondering where all the kit is?</a>
 			</div>
 		</footer>
 
@@ -68,12 +65,9 @@
 		let title_animate_delay = 130
 
 		let container = $('#magic-container')
-		let where_container = $('#where-is-it')
 		let excuse_container = $('#the-excuse')
 
-		let places=['Under the bins', 'Left on a job', 'Eaten', 'Someone\'s house', 'Accidentally gave it to the client', 'What kit? I haven\'t seen any kit', 'Really? Again?', 'Oh that, we lost that months ago', 'Why are you asking me for help?', 'It\'s in broken bits', 'In the van?', 'In the theatre', 'Relax, I\'m sure it\'ll turn up soon', 'Where you last had it', 'I\'m sure it will magically appear', 'Try calling it', 'The PO book drawer', 'In the corridore', 'Kit? Just go to the pub', 'With the e-stop key']
-
-		let excuses=['I thought I told someone', 'Have you tried forgetting about it?', 'We can always buy another one', 'Have you tried turning it off and on again?', 'Just pretend nothing happend', 'It has a label on it though', 'It\'s not the end of the world', 'Just think faster', 'Pub?', 'Just ask a volunteer to find it']
+		let excuses=['Jobs', 'Decent web design', 'Health and Safety', 'Sleep', 'Asset numbers']
 
 		$(document).ready(function(){
 			var done_title_animation = Cookies.get('done_title_animation')
@@ -106,18 +100,11 @@
 		};
 
 		function animateReasons() {
-			var rand_place = places[Math.floor(Math.random() * places.length)];
 			var rand_excuse = excuses[Math.floor(Math.random() * excuses.length)];
-
-			where_container.html(rand_place + ' ...').animate({
-				opacity: 1,
-			}, animate_time, function() {
-
-				excuse_container.html(rand_excuse).animate({
-					opacity: 0.8,
-				}, animate_time);
-
-			});
+			
+			excuse_container.html(rand_excuse).animate({
+				opacity: 0.8,
+			}, animate_time);
 		};
 
 	</script>
