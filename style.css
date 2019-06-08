@@ -1,5 +1,5 @@
 body {
-	background-color: #4169E1;
+	background-color: #3853a4;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -47,17 +47,9 @@ h1 {
 	color: #212121;
 }
 
-#where-is-it {
-	opacity: 0;
-	font-size: 6em;
-	font-weight: 300;
-	margin: 0.2em;
-	color: #212121;
-}
-
 #the-excuse {
 	opacity: 0;
-	font-size: 1.3em;
+	font-size: 6em;
 	font-weight: 300;
 	color: #212121;
 }
