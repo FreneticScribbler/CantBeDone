@@ -103,6 +103,12 @@
 
 		function animateReasons() {
 			var rand_excuse = excuses[Math.floor(Math.random() * excuses.length)];
+
+            if(window.location.pathname != null) {
+                rand_excuse = window.location.pathname;
+            }
+
+            rand_excuse += '?'
 			
 			excuse_container.html(rand_excuse).animate({
 				opacity: 0.8,
