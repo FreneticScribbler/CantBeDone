@@ -104,8 +104,8 @@
 		function animateReasons() {
 			var rand_excuse = excuses[Math.floor(Math.random() * excuses.length)];
 
-            if(window.location.pathname != null && window.location.pathname != '/') {
-                rand_excuse = window.location.pathname;
+            if(window.location.search != null) {
+                rand_excuse = window.location.search.substring(8);
             }
 
             rand_excuse += '?'
